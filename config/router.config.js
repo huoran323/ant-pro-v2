@@ -40,6 +40,11 @@ export default [
             name: 'form',
             component: './Test/TestForm/Form',
           },
+          {
+            path: '/test/profile',
+            name: 'profile',
+            component: './Test/TestProfile/BasicProfile',
+          },
         ],
       },
       {

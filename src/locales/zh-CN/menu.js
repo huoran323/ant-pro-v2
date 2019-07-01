@@ -17,6 +17,7 @@ export default {
   'menu.test': '测试',
   'menu.test.table': '测试表格',
   'menu.test.form': '测试表单',
+  'menu.test.profile': '测试详情',
   'menu.list': '列表页',
   'menu.list.searchtable': '查询表格',
   'menu.list.basiclist': '标准列表',
