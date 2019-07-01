@@ -6,6 +6,10 @@ import styles from '../style.less';
 const { Step } = Steps;
 
 export default class StepForm extends PureComponent {
+  componentDidMount() {
+    console.log(this.props);
+  }
+
   getCurrentStep() {
     const { location } = this.props;
     const { pathname } = location;

@@ -41,6 +41,33 @@ export default [
             component: './Test/TestForm/Form',
           },
           {
+            path: '/test/form-step',
+            name: 'formstep',
+            component: './Test/TestFormStep',
+            hideChildrenInMenu: true,
+            routes: [
+              {
+                path: '/test/form-step',
+                redirect: '/test/form-step/info',
+              },
+              {
+                path: '/test/form-step/info',
+                name: 'info',
+                component: './Test/TestFormStep/Step1',
+              },
+              {
+                path: '/test/form-step/confirm',
+                name: 'confirm',
+                component: './Test/TestFormStep/Step2',
+              },
+              {
+                path: '/test/form-step/result',
+                name: 'result',
+                component: './Test/TestFormStep/Step3',
+              },
+            ],
+          },
+          {
             path: '/test/profile',
             name: 'profile',
             component: './Test/TestProfile/BasicProfile',
