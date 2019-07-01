@@ -33,12 +33,12 @@ export default [
           {
             path: '/test/table',
             name: 'table',
-            component: './Test/Table',
+            component: './Test/TestTable/Table',
           },
           {
             path: '/test/form',
             name: 'form',
-            component: './Test/Form',
+            component: './Test/TestForm/Form',
           },
         ],
       },
