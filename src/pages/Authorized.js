@@ -7,6 +7,7 @@ import { getAuthority } from '@/utils/authority';
 import Exception403 from '@/pages/Exception/403';
 
 function AuthComponent({ children, location, routerData }) {
+  
   const auth = getAuthority();
   const isLogin = auth && auth[0] !== 'guest';
   const getRouteAuthority = (path, routeData) => {

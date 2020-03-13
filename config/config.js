@@ -16,6 +16,7 @@ const plugins = [
       antd: true,
       dva: {
         hmr: true,
+        immer: true,
       },
       locale: {
         enable: true, // default false
@@ -38,6 +39,7 @@ const plugins = [
       ...(!TEST && os.platform() === 'darwin'
         ? {
             dll: {
+              // 提升二次编译速度
               include: ['dva', 'dva/router', 'dva/saga', 'dva/fetch'],
               exclude: ['@babel/runtime', 'netlify-lambda'],
             },
